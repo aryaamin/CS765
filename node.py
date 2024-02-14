@@ -32,6 +32,7 @@ class Node:
         self.is_mining = False
         self.received_transactions = set()
         self.pending_transactions = set()
+        self.pending_blocks = []
 
 
     def __str__(self):
@@ -135,4 +136,59 @@ class Node:
 
     def receive_block(self, from_node, b:Block, curr_time):
         # TODO add validation, handle branching etc
+        if(self.blockchain.has_block(b.id)):
+            return
+        
+        if not b.prev_id:
+            # discard block due to invalid previous block
+            return False
+        
+        b.arrival_time = curr_time
+        if b.prev_id and not self.blockchain.has_block(b.prev_id):
+            self.pending_blocks.append(b)
+            return
+
+        head = self.blockchain.head
+        # previous block is the longest chain
+        if self.blockchain.get_block(b.prev_id) == head:
+            if b.chain_len != head.chain_len + 1:
+                # discard block due to invalid chain length
+                return False
+            ledger_copy = self.ledger.copy()
+            if b.transaction_list:
+                for t in b.transaction_list:
+                    if t.payer_id:
+                        ledger_copy[t.payer_id] -= t.coins
+                    else:
+                        if t.coins != 50:
+                            # discard block to bad mining reward
+                            return False
+                    ledger_copy[t.payee_id] += t.coins
+            for k, v in ledger_copy.items():
+                if v < 0:
+                    # discard block due to negative balance transactions
+                    return False
+            # add block to longest chain in blockchain
+            
+            self.blockchain.add_block(b)
+            self.ledger = ledger_copy
+            # update pending transactions
+            self.pending_transactions = self.pending_transactions - set(b.transaction_list)
+            # update received transactions
+            self.received_transactions = self.received_transactions + set(b.transaction_list)
+
+
+        else:
+            pass
+
+
+            for conn in self.connections:
+                if conn != from_node:
+                    Node.simulator.send_block(self, conn, b, curr_time)
+        
+        # if longest chain has changed restart mining
+        if head != self.blockchain.head:
+            self.is_mining = False
+            if len(self.pending_transactions) > 0:
+                self.generate_block_event(curr_time)
         pass

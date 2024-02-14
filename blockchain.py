@@ -12,6 +12,8 @@ class Block:
         self.chain_len = chain_len
         self.transaction_list = transaction_list
 
+        self.arrival_time = None
+
 class Blockchain:
     def __init__(self):
         # TODO add genesis block
@@ -23,6 +25,9 @@ class Blockchain:
         block.prev = self.head
         self.head = block
 
+    def has_block(self, block_id):
+        return block_id in self.id_blocks
+    
     def __str__(self):
         block = self.head
         s = ""
