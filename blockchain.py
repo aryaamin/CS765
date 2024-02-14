@@ -24,6 +24,7 @@ class Blockchain:
         # TODO handle branching
         block.prev = self.head
         self.head = block
+        
 
     def has_block(self, block_id):
         return block_id in self.id_blocks

@@ -43,6 +43,58 @@ class Node:
         self.num_nodes = len(ledger)
         self.generate_transaction_event(0.0)
         
+    def closest_common_parent(self, block):
+        head = self.blockchain.head
+        while head.chain_len != self.blockchain.get_block(block.prev_id).chain_length:
+            head = self.blockchain.get_block(head.prev_id)
+
+        prev_or = block.prev_id
+        
+        while head.id != prev_or:
+            head = self.blockchain.get_block(head.prev_id)
+            prev_or = prev_or.prev_id
+            
+        return head
+        
+    def find_correct_tran_and_amount(self, ccp, block):
+        head = self.blockchain.head
+        ledger_copy = self.ledger.copy()
+        ret = []
+        
+        while head.id != ccp.id:
+            for t in head.transaction_list:
+                if t.payer_id:
+                    amount = t.coins
+                    ledger_copy[t.payer_id] += amount
+                    ledger_copy[t.payee_id] -= amount
+                    self.pending_transactions.append(t)
+                else:
+                    ledger_copy[t.payee_id] -= 50
+                    
+            head = self.blockchain.id_blocks[head.prev_id]
+            
+        head = self.blockchain.id_blocks[block.prev_id]
+        pr = {}
+        
+        while head.id != ccp.id:
+            for t in head.transaction_list:
+                if t.payer_id:
+                    amount = t.coins
+                    ledger_copy[t.payer_id] += amount
+                    ledger_copy[t.payee_id] -= amount
+                    pr[t] = True
+                else:
+                    ledger_copy[t.payee_id] += 50
+                    
+            head = self.blockchain.id_blocks[head.prev_id]
+            
+        for t in self.pending_transactions:
+            if not pr[t]:
+                ret.append(t)
+                
+        return ret
+        
+        
     def generate_transaction_event(self, curr_time):
         new_event = Event(curr_time + np.random.exponential(Node.ttx), self, "generate_transaction")
         random.randint(0, self.num_nodes)
@@ -177,14 +229,15 @@ class Node:
             # update received transactions
             self.received_transactions = self.received_transactions + set(b.transaction_list)
 
-
         else:
-            pass
+            ccp = self.closest_common_parent(b)
+            p_tr = self.find_correct_tran_and_amount(ccp, b)
+            
 
 
-            for conn in self.connections:
-                if conn != from_node:
-                    Node.simulator.send_block(self, conn, b, curr_time)
+        for conn in self.connections:
+            if conn != from_node:
+                Node.simulator.send_block(self, conn, b, curr_time)
         
         # if longest chain has changed restart mining
         if head != self.blockchain.head:
