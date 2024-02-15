@@ -3,6 +3,7 @@ import argparse
 from node import Node, LinkSpeed, CpuSpeed
 from network import Network
 from simulator import Simulator
+import random
 
 if __name__ == "__main__":
     # take command line arguments
@@ -18,7 +19,9 @@ if __name__ == "__main__":
     z0 = parser.parse_args().z0
     z1 = parser.parse_args().z1
 
-
+    seed=0
+    random.seed(1)
+    np.random.seed(1)
     # create nodes
     nodes = []
     for i in range(num_nodes):
@@ -34,18 +37,16 @@ if __name__ == "__main__":
         node.CPU = CpuSpeed.SLOW
 
     # create network connections
-    Network.create_network(nodes, 4, 8)
+    network = Network(nodes)
+    network.create_network(2, 5)
 
-
-    sim = Simulator(nodes)
+    sim = Simulator(nodes, network)
     Node.simulator = sim
     sim.run()
-    print(nodes[0].ledger)
-    print(nodes[1].ledger)
 
-    # print connections
-    for node in nodes:
-        print(node, ":", [x.id for x in node.connections])
+    # # print connections
+    # for node in nodes:
+    #     print(node, ":", [x.id for x in node.connections])
 
 
     

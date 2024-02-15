@@ -1,6 +1,11 @@
 import numpy as np
+from node import LinkSpeed
 
 class Network:
+    def __init__(self, nodes):
+        self.nodes = nodes
+        pass
+    
     def is_fully_connected(nodes):
         # check if graph is fully connected
         idx_set = {0}
@@ -27,7 +32,15 @@ class Network:
                 return False
         return True
     
-    def create_network(nodes, min_conns, max_conns):
+    def get_delay(self, node1, node2, packet_size):
+        p = self.propagation_delay[(node1, node2)]
+        c = self.link_speed[(node1, node2)]*1000 # convert to kb per second
+        d = np.random.exponential(96/c)
+        delay = p + packet_size/c + d
+        return delay
+
+    def create_network(self, min_conns, max_conns):
+        nodes=self.nodes
         if min_conns >= len(nodes):
             raise ValueError("min_conns should be less than number of nodes")
         while True:
@@ -52,3 +65,16 @@ class Network:
                 # reset connections
                 for node in nodes:
                     node.connections = []
+        
+        self.propagation_delay = {}
+        self.link_speed = {}
+        for (node1, node2) in [(x, y) for x in nodes for y in x.connections]:
+            prop_delay = np.random.uniform(0.01, .5)
+            self.propagation_delay[(node1, node2)] = prop_delay
+            self.propagation_delay[(node2, node1)] = prop_delay
+            if node1.link == LinkSpeed.FAST and node2.link == LinkSpeed.FAST:
+                self.link_speed[(node1, node2)] = 100
+                self.link_speed[(node2, node1)] = 100
+            else:
+                self.link_speed[(node1, node2)] = 5 
+                self.link_speed[(node2, node1)] = 5 
