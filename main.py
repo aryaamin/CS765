@@ -54,7 +54,7 @@ if __name__ == "__main__":
 
     # create network connections
     network = Network(nodes)
-    network.create_network(2, 5)
+    network.create_network(3, 6)
 
     sim = Simulator(nodes, network)
     Node.simulator = sim
