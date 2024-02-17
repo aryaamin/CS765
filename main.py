@@ -12,16 +12,18 @@ if __name__ == "__main__":
     parser.add_argument("--z0", help="fraction of slow nodes in the network", type=float, default=0.5, required=False)
     parser.add_argument("--z1", help="fraction of nodes with low CPU in the  network", type=float, default=0.5, required=False)
     parser.add_argument("--ttx", help="mean generation time", type=float, default=1.0, required=False)
+    parser.add_argument("--I", help="inter arrival time", type=float, default=1.0, required=False)
 
     Node.ttx = parser.parse_args().ttx
+    Node.I = parser.parse_args().I
 
     num_nodes = parser.parse_args().num_nodes
     z0 = parser.parse_args().z0
     z1 = parser.parse_args().z1
 
-    seed=0
-    random.seed(1)
-    np.random.seed(1)
+    seed=5
+    random.seed(seed)
+    np.random.seed(seed)
     # create nodes
     nodes = []
     for i in range(num_nodes):
@@ -35,6 +37,20 @@ if __name__ == "__main__":
     low_cpu_nodes = np.random.choice(nodes, int(z1*len(nodes)), replace=False)
     for node in low_cpu_nodes:
         node.CPU = CpuSpeed.SLOW
+    
+    # set node hashing power
+    total_hash_power = 0
+    for node in nodes:
+        if node.CPU == CpuSpeed.FAST:
+            total_hash_power += 10
+        else:
+            total_hash_power += 1
+
+    for node in nodes:
+        if node.CPU == CpuSpeed.FAST:
+            node.hash_power = 10/total_hash_power
+        else:
+            node.hash_power = 1/total_hash_power 
 
     # create network connections
     network = Network(nodes)
@@ -44,9 +60,8 @@ if __name__ == "__main__":
     Node.simulator = sim
     sim.run()
 
-    # # print connections
-    # for node in nodes:
-    #     print(node, ":", [x.id for x in node.connections])
+    # print connection graph
+
 
 
     

@@ -1,7 +1,7 @@
 import random
 from queue import PriorityQueue
 from enum import Enum
-
+import sys, os
 
 class EventType(Enum):
     SEND_TRANSACTION = 1
@@ -30,7 +30,7 @@ class Simulator:
         self.network = network
 
     def add_event(self, event:Event):
-        print("Adding event: ", event.event_type, " at time: ", event.time)
+        # print("Adding event: ", event.event_type, " at time: ", event.time)
         self.events.put(event)
 
     def run(self):
@@ -52,10 +52,19 @@ class Simulator:
         
         for node in self.nodes:
             print(str(node.id) + " Ledger: ", node.ledger)
-            node.print_blockchain()
+            node.log_blockchain()
+        
+        orig_out = sys.stdout
+        filename = "output/connections.txt"
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+        with open(filename, "w") as file:
+            sys.stdout = file
+            for node in self.nodes:
+                print(node.id, [x.id for x in node.connections])
+        sys.stdout = orig_out
 
     def process_event(self, event:Event):
-        if event.event_type==EventType.SEND_TRANSACTION and self.time > 1:
+        if event.event_type==EventType.SEND_TRANSACTION and self.time > 20:
             return
         
         if event.event_type == EventType.SEND_TRANSACTION:

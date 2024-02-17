@@ -1,3 +1,5 @@
+import os
+
 class Transaction:
     def __init__(self, txn_id, payer_id, payee_id, coins):
         self.txn_id = txn_id
@@ -19,11 +21,12 @@ class Block:
     
     def __str__(self):
         string = "Block_id "+ str(self.id) + "\n"
+        string += "\tprev_id "+ str(self.prev_id) + "\n"
+        string += "\tchain_len "+ str(self.chain_len) + "\n"
+        string += "\tarrival_time "+ str(self.arrival_time) + "\n"
         string += "\ttransactions\n"
         for txn in self.transaction_list:
             string += "\t" + str(txn) + "\n"
-        string += "\tchain_len "+ str(self.chain_len) + "\n"
-        string += "\tarrival_time "+ str(self.arrival_time) + "\n"
         return string
 
 class Blockchain:
@@ -44,6 +47,14 @@ class Blockchain:
         return self.id_blocks[block_id]
     
     def log(self, filename):
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+        with open(filename, "w") as file:
+            for block in self.id_blocks.values():
+                file.write(str(block))
+                file.write("\n")
+
+    def log_longest_chain(self, filename):
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
         block = self.head
         blist = []
         while block.prev_id != -1:
