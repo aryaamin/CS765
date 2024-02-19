@@ -17,14 +17,14 @@ Block_id 0_1
 	chain_len 3
 	arrival_time 5.068050417072551
 	transactions
+	Transaction: 8_0 from 8 to 9 of 324 coins
+	Transaction: 3_0 from 3 to 4 of 634 coins
+	Transaction: 1_2 from 1 to 8 of 227 coins
 	Transaction: 6_0 from 6 to 7 of 170 coins
-	Transaction: 3_2 from 3 to 5 of 506 coins
-	Transaction: 4_0 from 4 to 9 of 362 coins
 	Transaction: 1_0 from 1 to 8 of 112 coins
+	Transaction: 4_0 from 4 to 9 of 362 coins
 	Transaction: 5_2 from 5 to 8 of 8 coins
 	Transaction: 9_0 from 9 to 8 of 105 coins
-	Transaction: 1_2 from 1 to 8 of 227 coins
-	Transaction: 8_0 from 8 to 9 of 324 coins
 	Transaction: 0_2 from None to 0 of 50 coins
 
 Block_id 6_1
@@ -32,329 +32,300 @@ Block_id 6_1
 	chain_len 3
 	arrival_time 5.3723481901728904
 	transactions
+	Transaction: 3_3 from 3 to 9 of 196 coins
+	Transaction: 3_0 from 3 to 4 of 634 coins
+	Transaction: 1_2 from 1 to 8 of 227 coins
+	Transaction: 8_0 from 8 to 9 of 324 coins
+	Transaction: 8_2 from 8 to 2 of 245 coins
 	Transaction: 6_0 from 6 to 7 of 170 coins
-	Transaction: 3_2 from 3 to 5 of 506 coins
 	Transaction: 1_0 from 1 to 8 of 112 coins
 	Transaction: 4_0 from 4 to 9 of 362 coins
 	Transaction: 2_2 from 2 to 8 of 341 coins
 	Transaction: 5_2 from 5 to 8 of 8 coins
 	Transaction: 2_0 from 2 to 2 of 289 coins
-	Transaction: 8_2 from 8 to 2 of 245 coins
 	Transaction: 9_0 from 9 to 8 of 105 coins
-	Transaction: 8_0 from 8 to 9 of 324 coins
-	Transaction: 1_2 from 1 to 8 of 227 coins
-	Transaction: 3_3 from 3 to 9 of 196 coins
 	Transaction: 6_3 from None to 6 of 50 coins
 
 Block_id 0_2
 	prev_id 0_1
 	chain_len 4
-	arrival_time 5.9830946595727
+	arrival_time 5.9826946595727
 	transactions
-	Transaction: 6_5 from 6 to 9 of 111 coins
-	Transaction: 8_8 from 8 to 0 of 225 coins
-	Transaction: 8_2 from 8 to 2 of 245 coins
-	Transaction: 7_0 from 7 to 5 of 104 coins
-	Transaction: 2_5 from 2 to 8 of 650 coins
-	Transaction: 6_8 from 6 to 1 of 32 coins
-	Transaction: 2_2 from 2 to 8 of 341 coins
 	Transaction: 5_5 from 5 to 1 of 3 coins
-	Transaction: 0_3 from 0 to 3 of 723 coins
-	Transaction: 9_2 from 9 to 1 of 230 coins
+	Transaction: 0_0 from 0 to 5 of 489 coins
+	Transaction: 6_5 from 6 to 9 of 111 coins
+	Transaction: 2_3 from 2 to 3 of 590 coins
+	Transaction: 8_3 from 8 to 1 of 299 coins
+	Transaction: 6_8 from 6 to 1 of 32 coins
+	Transaction: 3_4 from 3 to 4 of 112 coins
 	Transaction: 1_6 from 1 to 9 of 17 coins
-	Transaction: 5_8 from 5 to 1 of 12 coins
-	Transaction: 5_6 from 5 to 6 of 44 coins
-	Transaction: 6_4 from 6 to 2 of 46 coins
 	Transaction: 8_7 from 8 to 9 of 333 coins
 	Transaction: 1_4 from 1 to 6 of 306 coins
-	Transaction: 3_0 from 3 to 4 of 634 coins
-	Transaction: 3_4 from 3 to 4 of 112 coins
 	Transaction: 6_9 from 6 to 1 of 190 coins
-	Transaction: 8_4 from 8 to 7 of 295 coins
-	Transaction: 8_5 from 8 to 3 of 189 coins
-	Transaction: 5_7 from 5 to 4 of 2 coins
 	Transaction: 3_3 from 3 to 9 of 196 coins
+	Transaction: 5_6 from 5 to 6 of 44 coins
+	Transaction: 6_7 from 6 to 5 of 88 coins
 	Transaction: 6_2 from 6 to 6 of 48 coins
 	Transaction: 5_3 from 5 to 0 of 81 coins
+	Transaction: 9_2 from 9 to 1 of 230 coins
+	Transaction: 5_8 from 5 to 1 of 12 coins
+	Transaction: 7_0 from 7 to 5 of 104 coins
+	Transaction: 1_3 from 1 to 5 of 374 coins
+	Transaction: 3_2 from 3 to 5 of 506 coins
+	Transaction: 4_2 from 4 to 8 of 164 coins
+	Transaction: 5_7 from 5 to 4 of 2 coins
 	Transaction: 0_5 from None to 0 of 50 coins
 
 Block_id 8_3
 	prev_id 0_2
 	chain_len 5
-	arrival_time 6.740367456866507
+	arrival_time 6.772388557541647
 	transactions
-	Transaction: 0_0 from 0 to 5 of 489 coins
-	Transaction: 8_9 from 8 to 6 of 123 coins
-	Transaction: 9_8 from 9 to 9 of 964 coins
-	Transaction: 9_4 from 9 to 8 of 142 coins
-	Transaction: 4_2 from 4 to 8 of 164 coins
+	Transaction: 6_4 from 6 to 2 of 46 coins
 	Transaction: 8_10 from 8 to 8 of 24 coins
-	Transaction: 8_3 from 8 to 1 of 299 coins
-	Transaction: 4_4 from 4 to 7 of 134 coins
+	Transaction: 9_8 from 9 to 9 of 964 coins
 	Transaction: 9_6 from 9 to 1 of 306 coins
+	Transaction: 8_9 from 8 to 6 of 123 coins
 	Transaction: 9_5 from 9 to 1 of 318 coins
-	Transaction: 6_7 from 6 to 5 of 88 coins
 	Transaction: 1_7 from 1 to 5 of 253 coins
-	Transaction: 1_3 from 1 to 5 of 374 coins
+	Transaction: 9_4 from 9 to 8 of 142 coins
+	Transaction: 4_4 from 4 to 7 of 134 coins
 	Transaction: 8_13 from None to 8 of 50 coins
 
 Block_id 7_4
 	prev_id 8_3
 	chain_len 6
-	arrival_time 7.422759887255686
+	arrival_time 8.639786126337835
 	transactions
-	Transaction: 7_3 from 7 to 4 of 594 coins
-	Transaction: 9_9 from 9 to 0 of 417 coins
 	Transaction: 5_9 from 5 to 0 of 14 coins
+	Transaction: 9_9 from 9 to 0 of 417 coins
+	Transaction: 0_3 from 0 to 3 of 723 coins
+	Transaction: 8_2 from 8 to 2 of 245 coins
+	Transaction: 2_2 from 2 to 8 of 341 coins
+	Transaction: 7_3 from 7 to 4 of 594 coins
+	Transaction: 8_5 from 8 to 3 of 189 coins
 	Transaction: 7_7 from None to 7 of 50 coins
 
-Block_id 0_5
+Block_id 7_5
 	prev_id 7_4
 	chain_len 7
-	arrival_time 8.328572125837132
+	arrival_time 9.49056607681714
 	transactions
+	Transaction: 5_12 from 5 to 2 of 906 coins
 	Transaction: 0_4 from 0 to 3 of 128 coins
+	Transaction: 3_11 from 3 to 0 of 43 coins
 	Transaction: 1_8 from 1 to 3 of 36 coins
+	Transaction: 2_6 from 2 to 1 of 697 coins
+	Transaction: 2_0 from 2 to 2 of 289 coins
+	Transaction: 3_10 from 3 to 4 of 66 coins
 	Transaction: 3_6 from 3 to 3 of 344 coins
-	Transaction: 0_9 from None to 0 of 50 coins
+	Transaction: 4_5 from 4 to 2 of 224 coins
+	Transaction: 6_15 from 6 to 9 of 92 coins
+	Transaction: 1_11 from 1 to 2 of 65 coins
+	Transaction: 2_5 from 2 to 8 of 650 coins
+	Transaction: 0_8 from 0 to 7 of 13 coins
+	Transaction: 8_8 from 8 to 0 of 225 coins
+	Transaction: 6_12 from 6 to 4 of 52 coins
+	Transaction: 7_8 from None to 7 of 50 coins
 
 Block_id 8_6
-	prev_id 0_5
+	prev_id 7_5
 	chain_len 8
-	arrival_time 9.321502689568684
+	arrival_time 11.320982687835583
 	transactions
-	Transaction: 5_12 from 5 to 7 of 472 coins
-	Transaction: 0_8 from 0 to 6 of 46 coins
-	Transaction: 3_12 from 3 to 0 of 354 coins
-	Transaction: 4_10 from 4 to 5 of 590 coins
-	Transaction: 4_5 from 4 to 2 of 224 coins
-	Transaction: 6_12 from 6 to 4 of 52 coins
-	Transaction: 4_11 from 4 to 5 of 394 coins
-	Transaction: 1_12 from 1 to 4 of 521 coins
-	Transaction: 0_10 from 0 to 7 of 246 coins
-	Transaction: 3_10 from 3 to 0 of 90 coins
-	Transaction: 8_17 from None to 8 of 50 coins
-
-Block_id 7_7
-	prev_id 8_6
-	chain_len 9
-	arrival_time 10.530438494211475
-	transactions
-	Transaction: 0_11 from 0 to 0 of 83 coins
 	Transaction: 7_6 from 7 to 2 of 163 coins
-	Transaction: 7_10 from 7 to 4 of 66 coins
-	Transaction: 8_18 from 8 to 9 of 206 coins
-	Transaction: 2_0 from 2 to 2 of 289 coins
-	Transaction: 6_15 from 6 to 4 of 140 coins
-	Transaction: 7_12 from None to 7 of 50 coins
+	Transaction: 4_10 from 4 to 0 of 1 coins
+	Transaction: 2_12 from 2 to 4 of 33 coins
+	Transaction: 8_11 from 8 to 7 of 516 coins
+	Transaction: 4_9 from 4 to 5 of 197 coins
+	Transaction: 4_11 from 4 to 4 of 334 coins
+	Transaction: 5_17 from 5 to 3 of 491 coins
+	Transaction: 1_13 from 1 to 2 of 288 coins
+	Transaction: 1_14 from 1 to 9 of 412 coins
+	Transaction: 8_18 from None to 8 of 50 coins
 
-Block_id 7_8
-	prev_id 7_7
+Block_id 4_6
+	prev_id 7_5
+	chain_len 8
+	arrival_time 11.437197695234163
+	transactions
+	Transaction: 7_6 from 7 to 2 of 163 coins
+	Transaction: 4_10 from 4 to 0 of 1 coins
+	Transaction: 2_12 from 2 to 4 of 33 coins
+	Transaction: 8_11 from 8 to 7 of 516 coins
+	Transaction: 4_9 from 4 to 5 of 197 coins
+	Transaction: 4_11 from 4 to 4 of 334 coins
+	Transaction: 5_17 from 5 to 3 of 491 coins
+	Transaction: 1_13 from 1 to 2 of 288 coins
+	Transaction: 1_14 from 1 to 9 of 412 coins
+	Transaction: 4_14 from None to 4 of 50 coins
+
+Block_id 6_6
+	prev_id 7_5
+	chain_len 8
+	arrival_time 11.535997954182834
+	transactions
+	Transaction: 5_17 from 5 to 3 of 491 coins
+	Transaction: 8_11 from 8 to 7 of 516 coins
+	Transaction: 1_13 from 1 to 2 of 288 coins
+	Transaction: 4_9 from 4 to 5 of 197 coins
+	Transaction: 4_10 from 4 to 0 of 1 coins
+	Transaction: 7_6 from 7 to 2 of 163 coins
+	Transaction: 2_13 from 2 to 8 of 229 coins
+	Transaction: 8_4 from 8 to 7 of 295 coins
+	Transaction: 1_14 from 1 to 9 of 412 coins
+	Transaction: 2_12 from 2 to 4 of 33 coins
+	Transaction: 6_19 from None to 6 of 50 coins
+
+Block_id 4_7
+	prev_id 4_6
+	chain_len 9
+	arrival_time 11.976249024796306
+	transactions
+	Transaction: 2_14 from 2 to 6 of 26 coins
+	Transaction: 9_10 from 9 to 1 of 514 coins
+	Transaction: 4_15 from 4 to 1 of 711 coins
+	Transaction: 8_17 from 8 to 8 of 1 coins
+	Transaction: 7_11 from 7 to 0 of 42 coins
+	Transaction: 4_13 from 4 to 3 of 7 coins
+	Transaction: 2_13 from 2 to 8 of 229 coins
+	Transaction: 3_12 from 3 to 6 of 96 coins
+	Transaction: 6_16 from 6 to 4 of 34 coins
+	Transaction: 5_22 from 5 to 0 of 286 coins
+	Transaction: 8_4 from 8 to 7 of 295 coins
+	Transaction: 7_9 from 7 to 2 of 43 coins
+	Transaction: 2_11 from 2 to 6 of 183 coins
+	Transaction: 6_17 from 6 to 6 of 146 coins
+	Transaction: 3_15 from 3 to 3 of 84 coins
+	Transaction: 4_17 from None to 4 of 50 coins
+
+Block_id 8_8
+	prev_id 4_7
 	chain_len 10
-	arrival_time 11.141831332611508
+	arrival_time 16.893243563875448
 	transactions
-	Transaction: 0_13 from 0 to 8 of 229 coins
-	Transaction: 4_12 from 4 to 3 of 491 coins
-	Transaction: 2_11 from 2 to 6 of 88 coins
-	Transaction: 8_16 from 8 to 6 of 291 coins
-	Transaction: 7_13 from None to 7 of 50 coins
-
-Block_id 7_9
-	prev_id 7_8
-	chain_len 11
-	arrival_time 13.100966252515931
-	transactions
-	Transaction: 6_20 from 6 to 6 of 13 coins
-	Transaction: 6_10 from 6 to 0 of 311 coins
-	Transaction: 4_16 from 4 to 1 of 187 coins
-	Transaction: 3_13 from 3 to 9 of 325 coins
-	Transaction: 0_15 from 0 to 4 of 204 coins
-	Transaction: 9_10 from 9 to 1 of 514 coins
-	Transaction: 1_13 from 1 to 5 of 81 coins
-	Transaction: 9_16 from 9 to 4 of 167 coins
-	Transaction: 7_14 from None to 7 of 50 coins
-
-Block_id 4_9
-	prev_id 7_8
-	chain_len 11
-	arrival_time 13.38017984865476
-	transactions
-	Transaction: 6_21 from 6 to 0 of 55 coins
-	Transaction: 2_15 from 2 to 5 of 214 coins
-	Transaction: 4_15 from 4 to 3 of 101 coins
-	Transaction: 0_15 from 0 to 4 of 204 coins
+	Transaction: 9_14 from 9 to 3 of 51 coins
+	Transaction: 3_16 from 3 to 9 of 752 coins
+	Transaction: 1_15 from 1 to 2 of 48 coins
+	Transaction: 1_18 from 1 to 0 of 597 coins
 	Transaction: 6_6 from 6 to 9 of 250 coins
-	Transaction: 6_20 from 6 to 6 of 13 coins
-	Transaction: 4_16 from 4 to 1 of 187 coins
-	Transaction: 3_13 from 3 to 9 of 325 coins
-	Transaction: 8_19 from 8 to 2 of 24 coins
-	Transaction: 9_10 from 9 to 1 of 514 coins
-	Transaction: 3_16 from 3 to 6 of 4 coins
-	Transaction: 9_16 from 9 to 4 of 167 coins
-	Transaction: 4_19 from None to 4 of 50 coins
+	Transaction: 7_12 from 7 to 1 of 232 coins
+	Transaction: 8_24 from None to 8 of 50 coins
 
-Block_id 7_10
-	prev_id 7_9
+Block_id 6_9
+	prev_id 8_8
+	chain_len 11
+	arrival_time 18.31874205149831
+	transactions
+	Transaction: 5_29 from 5 to 5 of 174 coins
+	Transaction: 8_29 from 8 to 8 of 2 coins
+	Transaction: 0_9 from 0 to 0 of 83 coins
+	Transaction: 1_22 from 1 to 1 of 56 coins
+	Transaction: 2_22 from 2 to 1 of 10 coins
+	Transaction: 8_22 from 8 to 4 of 39 coins
+	Transaction: 8_30 from 8 to 7 of 23 coins
+	Transaction: 9_16 from 9 to 5 of 223 coins
+	Transaction: 4_22 from 4 to 3 of 300 coins
+	Transaction: 8_25 from 8 to 4 of 11 coins
+	Transaction: 2_16 from 2 to 2 of 72 coins
+	Transaction: 1_24 from 1 to 1 of 179 coins
+	Transaction: 9_21 from 9 to 1 of 104 coins
+	Transaction: 5_28 from 5 to 6 of 145 coins
+	Transaction: 6_20 from 6 to 8 of 2 coins
+	Transaction: 7_15 from 7 to 4 of 73 coins
+	Transaction: 9_22 from 9 to 8 of 217 coins
+	Transaction: 5_30 from 5 to 5 of 88 coins
+	Transaction: 5_25 from 5 to 4 of 67 coins
+	Transaction: 7_13 from 7 to 3 of 92 coins
+	Transaction: 6_25 from 6 to 3 of 22 coins
+	Transaction: 5_27 from 5 to 7 of 124 coins
+	Transaction: 4_20 from 4 to 2 of 80 coins
+	Transaction: 8_27 from 8 to 9 of 9 coins
+	Transaction: 2_21 from 2 to 4 of 3 coins
+	Transaction: 2_23 from 2 to 8 of 25 coins
+	Transaction: 8_23 from 8 to 2 of 79 coins
+	Transaction: 1_25 from 1 to 0 of 789 coins
+	Transaction: 7_19 from 7 to 6 of 470 coins
+	Transaction: 6_22 from 6 to 6 of 24 coins
+	Transaction: 8_28 from 8 to 4 of 13 coins
+	Transaction: 3_18 from 3 to 4 of 85 coins
+	Transaction: 9_19 from 9 to 5 of 43 coins
+	Transaction: 9_20 from 9 to 3 of 221 coins
+	Transaction: 1_20 from 1 to 9 of 307 coins
+	Transaction: 6_24 from 6 to 1 of 176 coins
+	Transaction: 6_29 from None to 6 of 50 coins
+
+Block_id 4_10
+	prev_id 6_9
 	chain_len 12
-	arrival_time 14.015832362354203
+	arrival_time 18.938422470831537
 	transactions
-	Transaction: 6_21 from 6 to 0 of 55 coins
-	Transaction: 4_15 from 4 to 3 of 101 coins
-	Transaction: 7_11 from 7 to 0 of 1 coins
-	Transaction: 9_21 from 9 to 4 of 22 coins
-	Transaction: 1_20 from 1 to 9 of 12 coins
-	Transaction: 7_16 from 7 to 0 of 597 coins
-	Transaction: 2_16 from 2 to 7 of 141 coins
-	Transaction: 1_18 from 1 to 1 of 18 coins
-	Transaction: 8_19 from 8 to 2 of 24 coins
-	Transaction: 5_14 from 5 to 2 of 514 coins
-	Transaction: 6_23 from 6 to 0 of 1 coins
-	Transaction: 1_22 from 1 to 5 of 11 coins
-	Transaction: 0_17 from 0 to 4 of 159 coins
-	Transaction: 2_15 from 2 to 5 of 214 coins
-	Transaction: 3_18 from 3 to 5 of 134 coins
-	Transaction: 1_15 from 1 to 6 of 318 coins
-	Transaction: 8_22 from 8 to 8 of 67 coins
-	Transaction: 6_17 from 6 to 6 of 115 coins
-	Transaction: 3_16 from 3 to 6 of 4 coins
-	Transaction: 7_18 from None to 7 of 50 coins
+	Transaction: 3_21 from 3 to 7 of 1222 coins
+	Transaction: 6_27 from 6 to 9 of 195 coins
+	Transaction: 2_26 from 2 to 9 of 65 coins
+	Transaction: 8_34 from 8 to 8 of 38 coins
+	Transaction: 4_24 from 4 to 4 of 21 coins
+	Transaction: 4_21 from 4 to 7 of 149 coins
+	Transaction: 6_26 from 6 to 9 of 132 coins
+	Transaction: 0_15 from 0 to 7 of 428 coins
+	Transaction: 0_18 from 0 to 7 of 74 coins
+	Transaction: 5_31 from 5 to 5 of 118 coins
+	Transaction: 6_28 from 6 to 2 of 83 coins
+	Transaction: 8_26 from 8 to 8 of 13 coins
+	Transaction: 2_24 from 2 to 6 of 48 coins
+	Transaction: 5_33 from 5 to 2 of 1 coins
+	Transaction: 8_35 from 8 to 5 of 37 coins
+	Transaction: 8_31 from 8 to 7 of 25 coins
+	Transaction: 8_36 from 8 to 6 of 60 coins
+	Transaction: 7_17 from 7 to 6 of 579 coins
+	Transaction: 7_20 from 7 to 3 of 511 coins
+	Transaction: 7_21 from 7 to 9 of 35 coins
+	Transaction: 1_26 from 1 to 1 of 236 coins
+	Transaction: 5_34 from 5 to 6 of 99 coins
+	Transaction: 0_14 from 0 to 7 of 119 coins
+	Transaction: 7_18 from 7 to 3 of 203 coins
+	Transaction: 0_17 from 0 to 9 of 1245 coins
+	Transaction: 4_27 from None to 4 of 50 coins
 
-Block_id 9_11
-	prev_id 7_10
+Block_id 7_11
+	prev_id 4_10
 	chain_len 13
-	arrival_time 16.780089531801764
+	arrival_time 20.28944282355878
 	transactions
-	Transaction: 7_17 from 7 to 4 of 310 coins
-	Transaction: 1_23 from 1 to 9 of 5 coins
-	Transaction: 9_22 from 9 to 4 of 67 coins
-	Transaction: 6_6 from 6 to 9 of 250 coins
-	Transaction: 9_23 from 9 to 2 of 172 coins
-	Transaction: 1_25 from 1 to 5 of 86 coins
-	Transaction: 4_17 from 4 to 1 of 407 coins
-	Transaction: 2_3 from 2 to 3 of 590 coins
-	Transaction: 0_22 from 0 to 0 of 198 coins
-	Transaction: 8_25 from 8 to 1 of 12 coins
-	Transaction: 4_20 from 4 to 5 of 104 coins
-	Transaction: 0_19 from 0 to 1 of 374 coins
-	Transaction: 3_21 from 3 to 2 of 316 coins
-	Transaction: 9_25 from 9 to 3 of 111 coins
-	Transaction: 8_24 from 8 to 9 of 44 coins
-	Transaction: 0_21 from 0 to 3 of 102 coins
-	Transaction: 2_19 from 2 to 1 of 213 coins
-	Transaction: 3_20 from 3 to 3 of 490 coins
-	Transaction: 3_22 from 3 to 0 of 437 coins
-	Transaction: 3_25 from 3 to 7 of 149 coins
-	Transaction: 9_27 from None to 9 of 50 coins
-
-Block_id 0_12
-	prev_id 9_11
-	chain_len 14
-	arrival_time 17.626952944345575
-	transactions
-	Transaction: 9_26 from 9 to 6 of 118 coins
-	Transaction: 1_31 from 1 to 9 of 275 coins
-	Transaction: 9_30 from 9 to 2 of 85 coins
-	Transaction: 1_28 from 1 to 1 of 150 coins
-	Transaction: 9_29 from 9 to 1 of 121 coins
-	Transaction: 1_27 from 1 to 3 of 44 coins
-	Transaction: 2_20 from 2 to 8 of 202 coins
-	Transaction: 3_29 from 3 to 2 of 116 coins
-	Transaction: 6_25 from 6 to 6 of 185 coins
-	Transaction: 4_21 from 4 to 1 of 123 coins
-	Transaction: 9_28 from 9 to 8 of 10 coins
-	Transaction: 1_30 from 1 to 6 of 208 coins
-	Transaction: 5_24 from 5 to 0 of 897 coins
-	Transaction: 6_26 from 6 to 7 of 288 coins
-	Transaction: 8_30 from 8 to 9 of 33 coins
-	Transaction: 1_26 from 1 to 9 of 268 coins
-	Transaction: 7_22 from 7 to 0 of 308 coins
-	Transaction: 7_19 from 7 to 1 of 236 coins
-	Transaction: 4_23 from 4 to 4 of 204 coins
-	Transaction: 9_17 from 9 to 2 of 132 coins
-	Transaction: 5_20 from 5 to 3 of 731 coins
-	Transaction: 8_27 from 8 to 7 of 68 coins
-	Transaction: 8_28 from 8 to 2 of 70 coins
-	Transaction: 3_23 from 3 to 6 of 579 coins
-	Transaction: 3_28 from 3 to 5 of 254 coins
-	Transaction: 0_25 from None to 0 of 50 coins
-
-Block_id 7_13
-	prev_id 0_12
-	chain_len 15
-	arrival_time 19.658599884857974
-	transactions
-	Transaction: 7_23 from 7 to 4 of 269 coins
-	Transaction: 2_23 from 2 to 9 of 389 coins
-	Transaction: 7_25 from 7 to 7 of 37 coins
-	Transaction: 9_31 from 9 to 5 of 118 coins
-	Transaction: 9_19 from 9 to 5 of 223 coins
-	Transaction: 1_32 from 1 to 6 of 247 coins
-	Transaction: 5_25 from 5 to 2 of 1 coins
-	Transaction: 6_27 from 6 to 5 of 173 coins
+	Transaction: 7_23 from 7 to 2 of 84 coins
+	Transaction: 6_10 from 6 to 0 of 311 coins
+	Transaction: 7_24 from 7 to 5 of 136 coins
+	Transaction: 2_19 from 2 to 3 of 245 coins
+	Transaction: 6_30 from 6 to 7 of 5 coins
+	Transaction: 5_36 from 5 to 2 of 200 coins
+	Transaction: 9_23 from 9 to 3 of 34 coins
+	Transaction: 6_32 from 6 to 9 of 17 coins
+	Transaction: 0_19 from 0 to 1 of 97 coins
+	Transaction: 1_29 from 1 to 2 of 336 coins
 	Transaction: 7_27 from None to 7 of 50 coins
 
-Block_id 6_14
-	prev_id 7_13
-	chain_len 16
-	arrival_time 20.17180287315369
+Block_id 0_12
+	prev_id 7_11
+	chain_len 14
+	arrival_time 20.82683333697184
 	transactions
-	Transaction: 5_27 from 5 to 7 of 578 coins
-	Transaction: 6_29 from 6 to 2 of 63 coins
-	Transaction: 1_33 from 1 to 6 of 197 coins
-	Transaction: 3_34 from 3 to 0 of 1 coins
-	Transaction: 0_23 from 0 to 1 of 104 coins
-	Transaction: 6_33 from 6 to 1 of 49 coins
-	Transaction: 8_33 from 8 to 1 of 43 coins
-	Transaction: 0_28 from 0 to 9 of 247 coins
-	Transaction: 0_29 from 0 to 1 of 1204 coins
-	Transaction: 4_28 from 4 to 5 of 158 coins
-	Transaction: 7_26 from 7 to 0 of 422 coins
-	Transaction: 9_33 from 9 to 2 of 42 coins
-	Transaction: 4_25 from 4 to 9 of 18 coins
-	Transaction: 6_34 from 6 to 0 of 194 coins
-	Transaction: 5_29 from 5 to 9 of 613 coins
-	Transaction: 4_29 from 4 to 3 of 225 coins
-	Transaction: 0_27 from 0 to 0 of 621 coins
-	Transaction: 2_28 from 2 to 5 of 147 coins
-	Transaction: 9_35 from 9 to 9 of 32 coins
-	Transaction: 2_29 from 2 to 2 of 42 coins
-	Transaction: 8_35 from 8 to 6 of 8 coins
-	Transaction: 6_36 from None to 6 of 50 coins
+	Transaction: 9_26 from 9 to 8 of 125 coins
+	Transaction: 3_20 from 3 to 7 of 1077 coins
+	Transaction: 7_26 from 7 to 5 of 158 coins
+	Transaction: 6_34 from 6 to 3 of 191 coins
+	Transaction: 5_35 from 5 to 0 of 106 coins
+	Transaction: 8_37 from 8 to 5 of 71 coins
+	Transaction: 7_28 from 7 to 0 of 262 coins
+	Transaction: 8_33 from 8 to 9 of 67 coins
+	Transaction: 8_38 from 8 to 9 of 8 coins
+	Transaction: 0_24 from None to 0 of 50 coins
 
-Block_id 8_14
-	prev_id 7_13
-	chain_len 16
-	arrival_time 20.780703321611277
+Block_id 8_13
+	prev_id 0_12
+	chain_len 15
+	arrival_time 22.20768208654535
 	transactions
-	Transaction: 5_27 from 5 to 7 of 578 coins
-	Transaction: 6_29 from 6 to 2 of 63 coins
-	Transaction: 1_33 from 1 to 6 of 197 coins
-	Transaction: 8_38 from 8 to 5 of 30 coins
-	Transaction: 0_23 from 0 to 1 of 104 coins
-	Transaction: 6_33 from 6 to 1 of 49 coins
-	Transaction: 4_30 from 4 to 1 of 243 coins
-	Transaction: 3_33 from 3 to 1 of 1 coins
-	Transaction: 0_28 from 0 to 9 of 247 coins
-	Transaction: 0_29 from 0 to 1 of 1204 coins
-	Transaction: 4_28 from 4 to 5 of 158 coins
-	Transaction: 7_26 from 7 to 0 of 422 coins
-	Transaction: 9_33 from 9 to 2 of 42 coins
-	Transaction: 4_25 from 4 to 9 of 18 coins
-	Transaction: 6_34 from 6 to 0 of 194 coins
-	Transaction: 5_29 from 5 to 9 of 613 coins
-	Transaction: 0_27 from 0 to 0 of 621 coins
-	Transaction: 8_37 from 8 to 7 of 25 coins
-	Transaction: 2_28 from 2 to 5 of 147 coins
-	Transaction: 9_35 from 9 to 9 of 32 coins
-	Transaction: 2_29 from 2 to 2 of 42 coins
-	Transaction: 8_40 from None to 8 of 50 coins
-
-Block_id 6_15
-	prev_id 6_14
-	chain_len 17
-	arrival_time 20.784427509042136
-	transactions
-	Transaction: 3_33 from 3 to 1 of 1 coins
-	Transaction: 3_30 from 3 to 0 of 120 coins
-	Transaction: 6_37 from None to 6 of 50 coins
+	Transaction: 2_27 from 2 to 1 of 43 coins
+	Transaction: 2_30 from 2 to 2 of 30 coins
+	Transaction: 8_43 from None to 8 of 50 coins
 

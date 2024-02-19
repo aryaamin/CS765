@@ -2,6 +2,8 @@ import random
 from queue import PriorityQueue
 from enum import Enum
 import sys, os
+import networkx as nx
+import matplotlib.pyplot as plt
 
 class EventType(Enum):
     SEND_TRANSACTION = 1
@@ -62,6 +64,41 @@ class Simulator:
             for node in self.nodes:
                 print(node.id, [x.id for x in node.connections])
         sys.stdout = orig_out
+        
+        nodes = []
+        edges = []
+        # Define edges as tuples (source, target)
+        for node in self.nodes:
+            nodes.append(node.id)
+            for x in node.connections:
+                if x.id > node.id:
+                    edges.append((node.id, x.id))
+                    
+        # Create a graph object
+        G = nx.Graph()
+
+        # Add nodes to the graph
+        G.add_nodes_from(nodes)
+
+        # Add edges to the graph
+        G.add_edges_from(edges)
+
+        # Draw the graph
+        pos = nx.spring_layout(G)  # positions for all nodes
+
+        # Draw nodes
+        nx.draw_networkx_nodes(G, pos, node_size=700)
+
+        # Draw edges
+        nx.draw_networkx_edges(G, pos, edgelist=edges, width=2)
+
+        # Draw labels
+        nx.draw_networkx_labels(G, pos, font_size=20, font_family='sans-serif')
+
+        # Display the graph
+        plt.axis('off')
+        plt.savefig('output/connections.png', format='png')
+
 
     def process_event(self, event:Event):
         if event.event_type==EventType.SEND_TRANSACTION and self.time > 20:
