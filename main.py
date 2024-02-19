@@ -29,7 +29,7 @@ if __name__ == "__main__":
     z0 = parser.parse_args().z0
     z1 = parser.parse_args().z1
 
-    seed=5
+    seed=0
     random.seed(seed)
     np.random.seed(seed)
     # create nodes
