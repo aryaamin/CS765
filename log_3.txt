@@ -1,0 +1,105 @@
+Received transaction: 1_0 from 1 of 27 coins
+Received transaction: 2_0 from 2 of 381 coins
+Received transaction: 8_0 from 8 of 633 coins
+Received transaction: 7_0 from 7 of 164 coins
+Received transaction: 5_0 from 5 of 749 coins
+Received transaction: 7_1 from 7 of 170 coins
+Received block from 6 : Block_id 6_0
+	prev_id _0
+	chain_len 2
+	arrival_time 1.170352457533071
+	transactions
+	Transaction: 1_0 from 1 to 2 of 27 coins
+	Transaction: 6_469589 from None to 6 of 50 coins
+
+Received block from 2 : Block_id 9_0
+	prev_id _0
+	chain_len 2
+	arrival_time 1.2574198670849266
+	transactions
+	Transaction: 8_0 from 8 to 9 of 633 coins
+	Transaction: 9_382700 from None to 9 of 50 coins
+
+Received transaction: 9_0 from 9 of 130 coins
+Sending block: Block_id 3_1
+	prev_id 6_0
+	chain_len 3
+	arrival_time 1.4080094398371024
+	transactions
+	Transaction: 2_0 from 2 to 7 of 381 coins
+	Transaction: 8_0 from 8 to 9 of 633 coins
+	Transaction: 7_1 from 7 to 2 of 170 coins
+	Transaction: 5_0 from 5 to 3 of 749 coins
+	Transaction: 7_0 from 7 to 1 of 164 coins
+	Transaction: 3_1170352 from None to 3 of 50 coins
+
+Received block from 0 : Block_id 4_1
+	prev_id 9_0
+	chain_len 3
+	arrival_time 1.478868329358193
+	transactions
+	Transaction: 5_0 from 5 to 3 of 749 coins
+	Transaction: 7_0 from 7 to 1 of 164 coins
+	Transaction: 4_698950 from None to 4 of 50 coins
+
+Received block from 0 : Block_id 9_1
+	prev_id 9_0
+	chain_len 3
+	arrival_time 1.5299144440861718
+	transactions
+	Transaction: 7_0 from 7 to 1 of 164 coins
+	Transaction: 5_0 from 5 to 3 of 749 coins
+	Transaction: 9_633064 from None to 9 of 50 coins
+
+Received block from 2 : Block_id 9_2
+	prev_id 9_1
+	chain_len 4
+	arrival_time 1.57256968213646
+	transactions
+	Transaction: 7_1 from 7 to 2 of 170 coins
+	Transaction: 2_0 from 2 to 7 of 381 coins
+	Transaction: 9_0 from 9 to 2 of 130 coins
+	Transaction: 9_914938 from None to 9 of 50 coins
+
+Sending block: Block_id 3_3
+	prev_id 9_2
+	chain_len 5
+	arrival_time 1.6074928229788912
+	transactions
+	Transaction: 1_0 from 1 to 2 of 27 coins
+	Transaction: 3_1572569 from None to 3 of 50 coins
+
+Received block from 2 : Block_id 8_1
+	prev_id 9_0
+	chain_len 3
+	arrival_time 1.8930637966585964
+	transactions
+	Transaction: 7_1 from 7 to 2 of 170 coins
+	Transaction: 7_0 from 7 to 1 of 164 coins
+	Transaction: 5_0 from 5 to 3 of 749 coins
+	Transaction: 8_872453 from None to 8 of 50 coins
+
+Received block from 0 : Block_id 5_3
+	prev_id 9_2
+	chain_len 5
+	arrival_time 1.9262090465775366
+	transactions
+	Transaction: 1_0 from 1 to 2 of 27 coins
+	Transaction: 5_1060810 from None to 5 of 50 coins
+
+Received block from 2 : Block_id 7_3
+	prev_id 9_2
+	chain_len 5
+	arrival_time 1.9287908508972766
+	transactions
+	Transaction: 1_0 from 1 to 2 of 27 coins
+	Transaction: 7_1110883 from None to 7 of 50 coins
+
+Received block from 2 : Block_id 8_3
+	prev_id 9_2
+	chain_len 5
+	arrival_time 2.2716638934792854
+	transactions
+	Transaction: 1_0 from 1 to 2 of 27 coins
+	Transaction: 8_1224636 from None to 8 of 50 coins
+

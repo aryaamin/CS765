@@ -1,0 +1,46 @@
+Block_id 7_0
+	transactions
+	Transaction: 6_0 from 6 to 0 of 12 coins
+	Transaction: 7_387059 from None to 7 of 50 coins
+	chain_len 2
+	arrival_time 0.9554647036624391
+
+Block_id 8_1
+	transactions
+	Transaction: 6_1 from 6 to 8 of 254 coins
+	Transaction: 8_497588 from None to 8 of 50 coins
+	chain_len 3
+	arrival_time 1.4872551127896032
+
+Block_id 8_2
+	transactions
+	Transaction: 9_0 from 9 to 3 of 541 coins
+	Transaction: 3_0 from 3 to 0 of 623 coins
+	Transaction: 0_0 from 0 to 6 of 121 coins
+	Transaction: 8_946856 from None to 8 of 50 coins
+	chain_len 4
+	arrival_time 1.4962273471660312
+
+Block_id 7_2
+	transactions
+	Transaction: 0_1 from 0 to 1 of 165 coins
+	Transaction: 7_995281 from None to 7 of 50 coins
+	chain_len 5
+	arrival_time 1.5738213493001239
+
+Block_id 0_4
+	transactions
+	Transaction: 3_1 from 3 to 6 of 23 coins
+	Transaction: 0_1176765 from None to 0 of 50 coins
+	chain_len 6
+	arrival_time 1.869019763394363
+
+Block_id 4_5
+	transactions
+	Transaction: 4_0 from 4 to 3 of 273 coins
+	Transaction: 9_1 from 9 to 7 of 225 coins
+	Transaction: 1_0 from 1 to 7 of 97 coins
+	Transaction: 4_1869019 from None to 4 of 50 coins
+	chain_len 7
+	arrival_time 2.0530463681632787
+
