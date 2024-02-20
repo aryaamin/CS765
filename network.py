@@ -36,7 +36,7 @@ class Network:
         p = self.propagation_delay[(node1, node2)]
         c = self.link_speed[(node1, node2)]*1000 # convert to kb per second
         d = np.random.exponential(96/c)
-        delay = p + packet_size/c + d
+        delay = p + packet_size*8/c + d
         return delay
 
     def create_network(self, min_conns, max_conns):
