@@ -1,9 +1,24 @@
 # CS765
 
+## Required Libraries
+
+The following libraries are required to run the code:
+
+- **numpy**: A library for numerical computing with Python.
+- **argparse**: A library for parsing command-line arguments.
+
+## Installation Instructions
+
+You can install these libraries using pip, the Python package manager.
+
+```
+pip install numpy argparse
+```
+
 ## Usage
 
 ```bash
-usage: main.py [-h] [-n NUM_NODES] [--z0 Z0] [--z1 Z1] [--ttx TTX] [--I I]
+usage: python main.py [-h] [-n NUM_NODES] [--z0 Z0] [--z1 Z1] [--ttx TTX] [--I I]
 
 options:
   -h, --help            show this help message and exit
