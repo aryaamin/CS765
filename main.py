@@ -5,13 +5,7 @@ from network import Network
 from simulator import Simulator
 import random
 import os
-import networkx as nx
-import matplotlib.pyplot as plt
-import pydot
 import igraph as ig
-from IPython.display import display
-
-from igraph import Graph, EdgeSeq
 
 if __name__ == "__main__":
     # take command line arguments
@@ -67,6 +61,8 @@ if __name__ == "__main__":
     sim = Simulator(nodes, network)
     Node.simulator = sim
     sim.run()
+
+    #print blockchain
     
     dir_path = "output/trees/trees_"+str(num_nodes)+"_"+str(z0)+"_"+str(z1)+"_"+str(Node.ttx)+"_"+str(seed)
     
@@ -76,15 +72,22 @@ if __name__ == "__main__":
         times = []
         
         G = ig.Graph(directed=True)
-        
+
+        treeFilePath = dir_path + f"/tree_{i}.txt"
+        treeFile = open(treeFilePath, 'w')
         gen_blk = nodes[i].blockchain.id_blocks["_0"]
         q = []
         q.append(gen_blk)
-        
         G.add_vertex(gen_blk.id)
         
         while len(q) > 0:
             p = q.pop(0)
+            if p.id != "_0":
+                print(f"{p.id} ({p.prev_id}) : {p.arrival_time} ", file=treeFile)
+                # G.add_edge(p.prev_id, p.id)
+            else:
+                print(f"{p.id} (genesis block) : {p.arrival_time} ", file=treeFile)
+
             for blk in nodes[i].blockchain.id_blocks.values():
                 if blk.prev_id == p.id:
                     q.append(blk)
@@ -95,3 +98,10 @@ if __name__ == "__main__":
         # Plot the graph
         layout = G.layout_reingold_tilford(root=[1])  # Layout for tree-like structures
         plot = ig.plot(G, layout=layout, bbox=(800, 800), vertex_label=G.vs['name'], edge_label=times).save(dir_path+f"/tree_{i}.png")
+
+
+    treeFile.close()
+    
+    
+    
+    
