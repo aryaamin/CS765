@@ -2,7 +2,6 @@ import random
 from queue import PriorityQueue
 from enum import Enum
 import sys, os
-import matplotlib.pyplot as plt
 
 class EventType(Enum):
     SEND_TRANSACTION = 1
