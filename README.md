@@ -1,5 +1,8 @@
 # CS765
 
+## Usage
+
+```bash
 usage: main.py [-h] [-n NUM_NODES] [--z0 Z0] [--z1 Z1] [--ttx TTX] [--I I]
 
 options:
@@ -10,9 +13,10 @@ options:
   --z1 Z1               fraction of nodes with low CPU in the network
   --ttx TTX             mean generation time
   --I I                 inter arrival time
+```
 
-
-Outputs
+## Outputs
 
 - `output/blockchain` contains the generated tree files
 - `output/logs` contains the log files
+
